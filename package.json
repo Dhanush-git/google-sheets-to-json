@@ -1,0 +1,12 @@
+{
+  "name": "@dhanush-npm/google-sheets-to-json",
+  "version": "1.0.0",
+  "description": "Convert Google Sheets to JSON",
+  "main": "index.js",
+  "dependencies": {
+    "to-camel-case": "^1.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
