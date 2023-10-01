@@ -2,11 +2,12 @@ const arrayToJSON = require('./array-to-json');
 
 const isRequired = (param) => { throw new Error(`${param} is required`); };
 
-async function googleSheetsToJSON(apiKey=isRequired("ApiKey"),sheetId=isRequired("SheetId")) {
+async function googleSheetsToJSON(apiKey=isRequired("ApiKey"),sheetId=isRequired("SheetId"),sheetName="Sheet1") {
   const API_KEY = apiKey;
   const SHEET_ID = sheetId;
+  const SHEET_NAME = sheetName;
   try {
-    const sheetsUrl = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/Sheet1?key=${API_KEY}`;
+    const sheetsUrl = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${SHEET_NAME}?key=${API_KEY}`;
     const data = await fetch(sheetsUrl)
       .then((res)=> res.json())
       .then((data)=> {
