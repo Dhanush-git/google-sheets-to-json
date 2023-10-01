@@ -3,10 +3,18 @@
   "version": "1.0.0",
   "description": "Convert Google Sheets to JSON",
   "main": "index.js",
+  "repository": "github:Dhanush-git/google-sheets-to-json.git",
   "dependencies": {
     "to-camel-case": "^1.0.0"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "google",
+    "spreadsheet",
+    "spreadsheets",
+    "gdata",
+    "api",
+    "json"
+  ],
+  "author": "Dhanush Suvarna",
   "license": "ISC"
 }
