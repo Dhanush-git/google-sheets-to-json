@@ -1,6 +1,6 @@
 {
   "name": "@dhanush-npm/google-sheets-to-json",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Convert Google Sheets to JSON",
   "main": "index.js",
   "repository": "github:Dhanush-git/google-sheets-to-json.git",
